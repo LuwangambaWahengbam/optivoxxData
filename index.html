@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Our New IT Skill Development Batch – Only 60 Seats!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+              secondary: "#1e40af",
+              accent: "#f59e0b",
+            },
+            animation: {
+              float: "float 3s ease-in-out infinite",
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+
+      .faq-item {
+        transition: all 0.3s ease;
+      }
+
+      .faq-item:hover {
+        transform: translateX(5px);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header/Hero Section -->
+    <header class="gradient-bg text-white relative overflow-hidden" id="home">
+      <div class=""><img src="images-removebg-preview.png" alt="" /></div>
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 py-20 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-pulse">
+            Join Our New IT Skill Development Batch
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-accent">
+            Only 60 Seats Available!
+          </h2>
+          <p class="text-xl mb-10 opacity-90">Learn Frontend, Backend</p>
+          <a href="formpage.html" target="_blank">
+            <button
+              class="bg-accent hover:bg-yellow-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Book Your Seat <i class="fas fa-arrow-right ml-2"></i></button
+          ></a>
+          <div class="mt-12 animate-float">
+            <i class="fas fa-laptop-code text-5xl opacity-80"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 h-16 bg-white"></div>
+    </header>
+
+    <!-- Offer Section -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-6">
+        <div
+          class="max-w-4xl mx-auto bg-gradient-to-r from-red-500 to-orange-500 rounded-xl p-8 text-center text-white shadow-xl"
+        >
+          <div class="flex justify-center items-center mb-4">
+            <i class="fas fa-fire text-3xl mr-3 animate-pulse"></i>
+            <h2 class="text-2xl md:text-3xl font-bold">
+              First 5 students get 20% OFF!
+            </h2>
+          </div>
+          <p class="text-lg">
+            Hurry! Limited time offer for early birds. Don't miss this chance to
+            save on your skill development journey.
+          </p>
+          <div class="mt-6 flex justify-center space-x-4">
+            <div
+              class="bg-white text-red-600 font-bold py-2 px-6 rounded-full text-sm"
+            >
+              Offer Ends Soon
+            </div>
+            <div
+              class="bg-white text-red-600 font-bold py-2 px-6 rounded-full text-sm"
+            >
+              Only 5 Available
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Details Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+        >
+          Program Details
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Frontend Card -->
+          <div
+            class="bg-white rounded-xl p-8 shadow-md transition-all duration-300 card-hover"
+          >
+            <div class="text-primary text-5xl mb-6">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Frontend Development
+            </h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>HTML5, CSS3, JavaScript</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>React.js & Next.js</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Tailwind CSS & UI Design</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Responsive Web Design</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Backend Card -->
+          <div
+            class="bg-white rounded-xl p-8 shadow-md transition-all duration-300 card-hover"
+          >
+            <div class="text-primary text-5xl mb-6">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Backend Development
+            </h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Node.js & Express</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Database (MongoDB)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>API Development</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Authentication & Security</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Duration Card -->
+          <div
+            class="bg-white rounded-xl p-8 shadow-md transition-all duration-300 card-hover"
+          >
+            <div class="text-primary text-5xl mb-6">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+              Duration & Schedule
+            </h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>6 Months Intensive Program</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>5 Days a Week</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>2 Hours Daily Sessions</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Weekend Projects & Support</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Class Mode Card -->
+          <div
+            class="bg-white rounded-xl p-8 shadow-md transition-all duration-300 card-hover"
+          >
+            <div class="text-primary text-5xl mb-6">
+              <i class="fas fa-laptop-house"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Class Mode</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Live Online Classes</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Recorded Sessions</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>Hybrid Option Available</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                <span>24/7 Support Community</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+        >
+          What Our Students Say
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-xl p-8 shadow-md testimonial-card">
+            <div class="flex items-center mb-6">
+              <img
+                src="https://randomuser.me/api/portraits/women/43.jpg"
+                alt="Sarah Johnson"
+                class="w-16 h-16 rounded-full object-cover border-4 border-primary"
+              />
+              <div class="ml-4">
+                <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                <p class="text-gray-600">Frontend Developer</p>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "This program transformed my career. Within 3 months of completing
+              the course, I landed a job with a 50% salary increase. The
+              hands-on projects were incredibly valuable."
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-xl p-8 shadow-md testimonial-card">
+            <div class="flex items-center mb-6">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Michael Chen"
+                class="w-16 h-16 rounded-full object-cover border-4 border-primary"
+              />
+              <div class="ml-4">
+                <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                <p class="text-gray-600">Full-stack Developer</p>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "The curriculum is perfectly balanced between theory and practice.
+              The instructors are industry experts who genuinely care about
+              student success. Best investment I've made in my career."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-xl p-8 shadow-md testimonial-card">
+            <div class="flex items-center mb-6">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Priya Patel"
+                class="w-16 h-16 rounded-full object-cover border-4 border-primary"
+              />
+              <div class="ml-4">
+                <h4 class="font-bold text-gray-800">Priya Patel</h4>
+                <p class="text-gray-600">Backend Engineer</p>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">
+              "Coming from a non-tech background, I was nervous, but the
+              structured learning path and mentor support made all the
+              difference. Now I'm building complex APIs with confidence!"
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <button
+            class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"
+          >
+            See More Success Stories <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800"
+        >
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="faq-item bg-gray-50 rounded-lg p-6 hover:bg-gray-100">
+            <div class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">
+                What are the prerequisites for this program?
+              </h3>
+              <i class="fas fa-chevron-down text-primary"></i>
+            </div>
+            <div class="mt-4 text-gray-600">
+              <p>
+                Basic computer literacy is required. No prior programming
+                experience is needed as we start from the fundamentals. A
+                willingness to learn and dedication to complete assignments is
+                what matters most.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+
+          <div class="faq-item bg-gray-50 rounded-lg p-6 hover:bg-gray-100">
+            <div class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Will I get a certificate upon completion?
+              </h3>
+              <i class="fas fa-chevron-down text-primary"></i>
+            </div>
+            <div class="mt-4 text-gray-600">
+              <p>
+                Yes, you'll receive a verifiable digital certificate after
+                successfully completing all modules and projects. Our
+                certificates are recognized by industry partners and can be
+                shared on LinkedIn.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item bg-gray-50 rounded-lg p-6 hover:bg-gray-100">
+            <div class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">
+                What kind of job support do you provide?
+              </h3>
+              <i class="fas fa-chevron-down text-primary"></i>
+            </div>
+            <div class="mt-4 text-gray-600">
+              <p>
+                We offer comprehensive career services including resume reviews,
+                mock interviews, portfolio building, and direct introductions to
+                our hiring partners. Our alumni network also shares job
+                opportunities.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item bg-gray-50 rounded-lg p-6 hover:bg-gray-100">
+            <div class="flex justify-between items-center cursor-pointer">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Can I access the course materials after completion?
+              </h3>
+              <i class="fas fa-chevron-down text-primary"></i>
+            </div>
+            <div class="mt-4 text-gray-600">
+              <p>
+                Absolutely! You'll have lifetime access to all course materials,
+                including video recordings, code samples, and updated content.
+                We continuously add new resources to keep our updated.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600 mb-6">
+            Still have questions? We're happy to help!
+          </p>
+          <a href="https://forms.gle/3666tMyr28eh8bQ39" target="_blank">
+            <button
+              class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              Contact Our Team <i class="fas fa-headset ml-2"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Upskill?</h2>
+        <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">
+          Only 60 seats available for this batch. Don't miss your chance to
+          transform your career with in-demand IT skills.
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6"
+        >
+          <a
+            href="#"
+            class="bg-white hover:bg-gray-100 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+          >
+            <i class="fab fa-whatsapp text-2xl mr-3"></i> Apply via WhatsApp
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdV1do03X5GpRz6GrhufRmToyBu0SK2V_yi0A-mmZ4LbVfxLw/viewform"
+            class="bg-accent hover:bg-yellow-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+          >
+            <i class="fab fa-google text-2xl mr-3"></i> Google Form Application
+          </a>
+        </div>
+
+        <div class="mt-12 flex justify-center space-x-6 text-sm">
+          <div class="flex items-center">
+            <i class="fas fa-users mr-2 text-accent"></i>
+            <span>45/60 Seats Already Filled</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-clock mr-2 text-accent"></i>
+            <span>Batch Starts: August 15, 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Optivoxx Techenology</h3>
+            <p class="text-gray-400">
+              Empowering the next generation of developers with
+              industry-relevant skills and practical knowledge.
+            </p>
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="https://www.facebook.com/profile.php?id=61573743451994"
+                class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573743451994"
+                class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573743451994"
+                class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573743451994"
+                class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#home" class="hover:text-white">Home</a></li>
+              <li><a href="#" class="hover:text-white">Curriculum</a></li>
+              <li><a href="#" class="hover:text-white">Pricing</a></li>
+              <li><a href="#" class="hover:text-white">Testimonials</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Programs</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#home" class="hover:text-white"
+                  >Frontend Development</a
+                >
+              </li>
+              <li>
+                <a href="#home" class="hover:text-white">Backend Development</a>
+              </li>
+              <li>
+                <a href="#home" class="hover:text-white">Full-stack Program</a>
+              </li>
+              <li>
+                <a href="#home" class="hover:text-white">Advanced JavaScript</a>
+              </li>
+              <li>
+                <a href="#home" class="hover:text-white">Cloud Computing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Contact Us</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Shagolban Kurao makhong, Imphal, Manipur</span>
+              </li>
+
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>optivoxx.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 Optivoxx Techenology. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+      <a
+        href="https://wa.me/+916909018702"
+        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg transform transition-all duration-300 hover:scale-110"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <script>
+      // Simple animation for FAQ toggle
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        const header = item.querySelector("div:first-child");
+        const content = item.querySelector("div:last-child");
+
+        header.addEventListener("click", () => {
+          const isOpen = content.style.display === "block";
+          content.style.display = isOpen ? "none" : "block";
+          const icon = header.querySelector("i");
+          icon.classList.toggle("fa-chevron-down");
+          icon.classList.toggle("fa-chevron-up");
+        });
+      });
+
+      // Scroll animation
+      document.addEventListener("DOMContentLoaded", () => {
+        const animateOnScroll = () => {
+          const elements = document.querySelectorAll(
+            ".faq-item, .testimonial-card, .card-hover"
+          );
+
+          elements.forEach((element) => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (elementPosition < screenPosition) {
+              element.style.opacity = "1";
+              element.style.transform = "translateY(0)";
+            }
+          });
+        };
+
+        // Set initial state
+        document
+          .querySelectorAll(".faq-item, .testimonial-card, .card-hover")
+          .forEach((el) => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            el.style.transition = "all 0.6s ease";
+          });
+
+        window.addEventListener("scroll", animateOnScroll);
+        animateOnScroll(); // Run once on load
+      });
+    </script>
+  </body>
+</html>
